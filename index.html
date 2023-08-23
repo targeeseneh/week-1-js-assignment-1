@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Functions and how to use them</h1>
+    <p>Function is an imprtant concept of Javascript that is use almost everywhere in your code. <br>
+        To create a function first you must have the function key word follow by a name in a parentheses (), and a crully brisk {} <br>
+        which are know as parrameter and agurement. Everthing between the curley brisk is going to be executed in the code. <br> but only when the function is called and the code is run. <br> Example... function person_name () { <br><br>
+            console.log("person_name") <br><br>
+        } <br>   
+    </p>
+
+    <h1>How to call a funcion</h2>
+    <p>To call a function, first all we have to do is first write thr function name follow by a parentheses () that tells the function <br>
+    we want to call it. <br>
+    Example... function person_name () { <br><br>
+        console.log("person_name") <br><br> } <br> person_name ()
+</p>
+
+<h1>Passing agurment to a function</h2>
+<p>
+    To pass an agurment to function we firstly need the function key word, the function name, a parentheses in which we <br>
+    are placing the agrument we are passing to the function and a curley brisk and call our function at the end of our code. <br>
+    Example... function person_name (a, b) { <br><br>
+        console.log(a,b) <br><br> } <br> person_name ("Targee","Seneh")
+</p>
+	
+<script type="text/javascript">
+
+	//question 1
+	let day_of_the_week = 7
+	switch(day_of_the_week){
+        case 0:
+            console.log("Sunday");
+            break;
+        case 1:
+            console.log("Monday");
+            break;  
+        case 2:
+            console.log("Tuesday");
+            break; 
+        case 3:
+            console.log("Wednesday");
+            break; 
+        case 4:
+            console.log("Thursday");
+            break;
+         case 5:
+            console.log("Friday");
+            break;
+         case 6:
+            console.log("Saturday");
+            break;
+        default:
+            console.log("Not a day");
+    }
+    
+    //question 2
+    let user_age = prompt("Hello, please enter your age");
+    if(user_age >=18 ){
+        alert("Welcome, you are eligible to vote. Please register.")
+    }
+   
+    else{
+        alert("Sorry!! You've not reach the age of voting.")
+    }
+
+    //question 3
+    let person_average = prompt("Hello, what's your average?");
+			 if(person_average >= 90 && person_average <= 100){
+			 	alert("Your grade is A")
+			 }
+			 else if (person_average >=80 && person_average<= 89){
+			 	alert(" Your grade is B ")
+			 }
+			 else if (person_average >=70 && person_average <= 79){
+			 	alert("Your grade is C")
+			 }
+			 
+			else if (person_average >=60 && person_average <= 69){
+			 	alert("Your grade is D")
+			 }
+			else if (person_average <= 60 ){
+			 	alert("Your grade is F")
+			 }
+
+     //question 4
+    let persone_age = prompt("Hello, please enter your age");
+    if(persone_age >=18 ){
+        alert("You are eligible to obtain a license.")
+    }
+   
+    else{
+        alert("Sorry!! You've not reach the age of obtaining a license.")
+    } 
+
+    //question 5
+     let age = prompt("What is your age?")
+
+     switch(age){
+     case <= 12:
+        console.log("Child")
+     	break;
+     case >= 18 && <=19:
+     	console.log("Teenager")
+    	break;
+     case >=20 && <= 50:
+     	console.log("Adult")
+     	break;
+     case >= 51:
+     	console.log("Senior")
+    default:
+    	console.log("Think you are an ancestor")
+     }
+</script>
+</body>
+</html>
